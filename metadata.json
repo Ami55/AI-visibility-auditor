@@ -1,0 +1,6 @@
+{
+  "name": "AI Visibility Auditor",
+  "description": "Analyze and audit your brand's search visibility, entity status, content structure, and retrieval readiness across ChatGPT, Gemini, Claude, Perplexity, Copilot, and Google AI Overviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

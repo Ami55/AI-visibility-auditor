@@ -239,10 +239,10 @@ export default function App() {
               <>
                 <div className="mt-8 max-w-xl mx-auto border border-dashed border-slate-200 dark:border-slate-800/80 p-6 rounded-2xl bg-white dark:bg-slate-900 text-center shadow-xs">
                   <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-1">
-                    Want to explore an existing brand first?
+                    Want to explore a fictional example first?
                   </h3>
                   <p className="text-xs text-slate-400 dark:text-slate-400 mb-4 max-w-md mx-auto">
-                    Load a pre-populated comprehensive audit report configured for <strong>toursbylocals.com</strong> to try all interactive metrics, charts, tables, comparisons, and export features instantly.
+                    Explore a fictional audit for <strong>Example Travel (example.com)</strong>. All scores, findings, trends, and comparisons are illustrative sample data, not live measurements.
                   </p>
                   <button
                     id="demo-trigger-btn"
@@ -250,7 +250,7 @@ export default function App() {
                     className="inline-flex items-center gap-2 bg-blue-50 dark:bg-blue-950/40 text-blue-650 dark:text-blue-400 hover:bg-blue-100/55 dark:hover:bg-blue-950 px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all shadow-inner border border-blue-100/30 cursor-pointer"
                   >
                     <Sparkles className="w-3.5 h-3.5 animate-pulse" />
-                    <span>Load Live Sample Audit (ToursByLocals)</span>
+                    <span>Load Fictional Demo (Example Travel)</span>
                   </button>
                 </div>
 
@@ -263,6 +263,12 @@ export default function App() {
           /* ACTIVE REPORT DASHBOARD VIEW */
           <div className="space-y-8 animate-fade-in print:p-0">
             
+            {report.isDemo && (
+              <div role="note" className="rounded-xl border border-amber-300 bg-amber-50 px-5 py-4 text-sm text-amber-950 dark:border-amber-800 dark:bg-amber-950 dark:text-amber-100 print:border-amber-300 print:bg-white print:text-black">
+                <strong>Fictional demo — Example Travel.</strong> All scores, findings, trends, sources, and competitor comparisons are illustrative. This is not a live audit of a real business.
+              </div>
+            )}
+
             {/* Print Header Node (Only visible during print/PDF layouts) */}
             <div className="hidden print:block border-b border-slate-350 pb-6 mb-8">
               <div className="flex items-center justify-between">

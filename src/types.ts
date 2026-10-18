@@ -101,6 +101,7 @@ export interface MatrixItem {
 }
 
 export interface AuditReport {
+  isDemo?: boolean;
   id: string;
   domain: string;
   brandName?: string;

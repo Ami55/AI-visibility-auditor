@@ -119,7 +119,7 @@ export default function InputForm({ onSubmit, isLoading }: InputFormProps) {
               />
             </div>
             <p className="text-[11px] text-slate-400 dark:text-slate-500 mt-1 pl-1">
-              Example: toursbylocals.com
+              Example: example.com
             </p>
           </div>
 
@@ -147,7 +147,7 @@ export default function InputForm({ onSubmit, isLoading }: InputFormProps) {
                   <input
                     id="brand-name-input"
                     type="text"
-                    placeholder="e.g. ToursByLocals"
+                    placeholder="e.g. Example Travel"
                     value={brandName}
                     onChange={(e) => setBrandName(e.target.value)}
                     className="w-full px-4 py-2 bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 focus:border-blue-500 dark:focus:border-blue-500 rounded-lg outline-none font-medium text-sm text-slate-800 dark:text-slate-100 placeholder-slate-400/80 transition-all"

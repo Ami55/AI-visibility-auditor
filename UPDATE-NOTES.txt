@@ -1,0 +1,27 @@
+APP CLEANUP — 18 October 2026
+
+Replaced all employer-brand references in placeholders, demo text, sample report
+identifiers, narratives, and competitor tables with Example Travel / example.com.
+Used fictional .example domains for demo competitors and citation sources.
+Added a persistent fictional-demo notice that also appears when printing.
+
+Changed source files:
+src/App.tsx
+src/components/InputForm.tsx
+src/components/StaticSampleData.ts
+src/types.ts
+
+pnpm-lock.yaml was generated for repeatable dependency installation.
+
+Validation completed:
+- pnpm run lint (TypeScript): passed.
+- pnpm run build (frontend and server): passed.
+- Source and production-output scan: no removed brand names or URLs remain.
+- Browser check: fictional demo loads with the new domain and notice.
+
+Deployment:
+Replace the repository source with these files, commit, and redeploy through
+its existing Vercel project. Keep existing environment variables configured.
+The hosted app has not been changed by this local update.
+
+Live AI calls were not tested; they require your configured server API key.

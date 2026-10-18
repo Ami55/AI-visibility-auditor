@@ -1,9 +1,11 @@
 import { AuditReport } from "../types";
 
+// Fictional demonstration data; no live audit or measurements were performed.
 export const SAMPLE_REPORT: AuditReport = {
-  id: "audit-toursbylocals",
-  domain: "toursbylocals.com",
-  brandName: "ToursByLocals",
+  id: "audit-example-travel",
+  isDemo: true,
+  domain: "example.com",
+  brandName: "Example Travel",
   industry: "Travel & Private Tour Guide Services",
   country: "Worldwide",
   timestamp: new Date().toISOString(),
@@ -17,7 +19,7 @@ export const SAMPLE_REPORT: AuditReport = {
     "Zero indexability roadblocks; robots.txt leaves AI crawler access open."
   ],
   weaknesses: [
-    "Low citation share in Perplexity general 'things to do' responses compared to Viator.",
+    "Low citation share in Perplexity general 'things to do' responses compared to Example Competitor One.",
     "Absence of organization-level sameAs markup referencing Wikidata and official social networks.",
     "FAQ content lacks micro-formatting schema on major destination category pages.",
     "Author person schemas are missing for local area expert guides in content hubs.",
@@ -25,7 +27,7 @@ export const SAMPLE_REPORT: AuditReport = {
   ],
   opportunities: [
     "Inject destination-level Organization and LocalBusiness schema to feed Google AI Overviews directly.",
-    "Restructure FAQs to address conversational zero-search queries like 'is ToursByLocals safe'.",
+    "Restructure FAQs to address conversational zero-search queries like 'is Example Travel safe'.",
     "Formulate an entity amplification initiative linking guide profiles to active external travel blogs."
   ],
   platforms: [
@@ -33,7 +35,7 @@ export const SAMPLE_REPORT: AuditReport = {
       "name": "ChatGPT",
       "score": 82,
       "status": "Strong",
-      "explanation": "ToursByLocals is frequently cited when prompts request highly localized, private, and customizable itineraries. GPT-4o retrieves travel records from established blogs mentioning the brand.",
+      "explanation": "Example Travel is frequently cited when prompts request highly localized, private, and customizable itineraries. GPT-4o retrieves travel records from established blogs mentioning the brand.",
       "reasons": [
         "Strong brand authority in destination travel forums.",
         "Positive sentiment across verified user reviews cited in datasets.",
@@ -45,7 +47,7 @@ export const SAMPLE_REPORT: AuditReport = {
       "name": "Gemini",
       "score": 79,
       "status": "Strong",
-      "explanation": "Thrives under Google Search Grounding due to excellent deep organic indexation. However, sometimes loses real estate to Viator in commercial intent summaries.",
+      "explanation": "Thrives under Google Search Grounding due to excellent deep organic indexation. However, sometimes loses real estate to Example Competitor One in commercial intent summaries.",
       "reasons": [
         "Deep indexation indexes over 10,000+ tour detail pages.",
         "Strong brand entity recognition in Google's Knowledge Graph.",
@@ -69,7 +71,7 @@ export const SAMPLE_REPORT: AuditReport = {
       "name": "Perplexity",
       "score": 72,
       "status": "Moderate",
-      "explanation": "Citations are highly factual and map back to customer support or reviews. However, Perplexity Pro Search often selects larger hubs like TripAdvisor or Viator for generic recommendations.",
+      "explanation": "Citations are highly factual and map back to customer support or reviews. However, Perplexity Pro Search often selects larger hubs like Example Reviews or Example Competitor One for generic recommendations.",
       "reasons": [
         "Directly retrieves and displays domain pages as source links.",
         "Strong authority mapping on customer trust/safety FAQs.",
@@ -81,7 +83,7 @@ export const SAMPLE_REPORT: AuditReport = {
       "name": "Google AI Overviews",
       "score": 85,
       "status": "Strong",
-      "explanation": "Google's SGE/AI Overviews frequently match ToursByLocals for local queries because of the high density of user-generated review components and granular pricing schema.",
+      "explanation": "Google's SGE/AI Overviews frequently match Example Travel for local queries because of the high density of user-generated review components and granular pricing schema.",
       "reasons": [
         "Consistent structured pricing on individual tour layouts.",
         "Highly authoritative localized content matching searcher intent.",
@@ -138,11 +140,11 @@ export const SAMPLE_REPORT: AuditReport = {
   authority: {
     "score": 75,
     "mentionSources": [
-      "nytimes.com",
-      "forbes.com",
-      "tripadvisor.com (highly cited cluster)",
-      "lonelyplanet.com forums",
-      "trustpilot.com profile reviews"
+      "editorial.example",
+      "business.example",
+      "reviews.example (highly cited cluster)",
+      "travel-forum.example forums",
+      "ratings.example profile reviews"
     ],
     "trustSignalsFound": [
       "High density of positive consumer reviews on trusted platforms.",
@@ -187,7 +189,7 @@ export const SAMPLE_REPORT: AuditReport = {
   },
   competitors: {
     "you": {
-      "name": "toursbylocals.com",
+      "name": "example.com",
       "visibilityScore": 78,
       "entityScore": 74,
       "authorityScore": 75,
@@ -195,14 +197,14 @@ export const SAMPLE_REPORT: AuditReport = {
     },
     "competitors": [
       {
-        "name": "viator.com",
+        "name": "competitor-one.example",
         "visibilityScore": 92,
         "entityScore": 88,
         "authorityScore": 93,
         "contentScore": 89
       },
       {
-        "name": "getyourguide.com",
+        "name": "competitor-two.example",
         "visibilityScore": 86,
         "entityScore": 82,
         "authorityScore": 85,
@@ -214,7 +216,7 @@ export const SAMPLE_REPORT: AuditReport = {
       "Stronger guide-to-customer direct relationship narratives."
     ],
     "disadvantages": [
-      "Significantly smaller baseline authority mention volume globally compared to Viator's search indexing footprint.",
+      "Significantly smaller baseline authority mention volume globally compared to Example Competitor One's search indexing footprint.",
       "Less citation coverage in generic travel planning checklists."
     ],
     "missedOpportunities": [

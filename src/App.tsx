@@ -1210,7 +1210,7 @@ export default function App() {
       <footer className="mt-16 border-t border-slate-100 dark:border-slate-900 bg-white dark:bg-slate-900 py-8 px-4 text-center text-xs text-slate-400 dark:text-slate-500 print:hidden">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <p>
-            © 2026 AI Visibility Auditor. Developed by <strong className="text-pink-600 dark:text-pink-400 font-bold">Ami - SEO Girl</strong>. All rights reserved.
+            © 2026 AI Visibility Auditor. Developed by <strong className="text-pink-600 dark:text-pink-400 font-bold">SEO Girl - Ami</strong>. All rights reserved.
           </p>
           <div className="flex gap-4 font-semibold text-[11px] text-slate-450 items-center">
             <button
